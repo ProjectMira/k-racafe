@@ -29,20 +29,26 @@ python3 -m http.server 4321
 Then open http://localhost:4321. (Or use the `kora-site` config in
 `.claude/launch.json`.)
 
-## Deploy to Cloudflare Pages
+## Deploy
 
-Authenticate once, then deploy the folder:
-
-```bash
-npx wrangler login
-```
+Cloudflare Pages builds from GitHub: <https://github.com/ProjectMira/k-racafe>.
+Push to `main` and the site redeploys automatically.
 
 ```bash
-npx wrangler pages deploy . --project-name=kora-cafe
+git push
 ```
 
-This gives a `kora-cafe.pages.dev` URL. Attaching the real domain is done in
-the Cloudflare dashboard once the zone is active — see below.
+Pages project settings — there is no build step, so:
+
+| Setting | Value |
+|---|---|
+| Framework preset | None |
+| Build command | *(leave empty)* |
+| Build output directory | `/` |
+| Production branch | `main` |
+
+First-time connection: Cloudflare dashboard → **Workers & Pages** → **Create** →
+**Pages** → **Connect to Git** → pick `ProjectMira/k-racafe`.
 
 ## Domain
 
