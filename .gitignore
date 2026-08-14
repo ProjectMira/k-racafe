@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+node_modules/
+
+# Business documents live outside this repo on purpose — they contain the
+# partners' personal records and must not be published with the site.
+drive-archive/
