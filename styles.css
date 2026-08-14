@@ -31,24 +31,14 @@ body{
 
 /* ---------- logo ---------- */
 
+/* The mark — geometry, matching brand/svg/kora-mark.svg exactly. */
 .glyph{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+  display:block;
   width:2.6rem;
   height:2.6rem;
-  background:#ffffff;
-  color:var(--ink);
-  border:1px solid var(--ink);
-  font-family:var(--serif);
-  font-size:1.7rem;
-  line-height:1;
-  padding-bottom:.28em;   /* optical centring for the macron */
   flex:none;
 }
-footer .glyph{width:3.6rem;height:3.6rem;font-size:2.3rem}
-/* the mark is always the same: white square, black rule, ō */
-.glyph.invert{border-color:var(--ink)}
+footer .glyph{width:3.6rem;height:3.6rem;margin:0 auto}
 
 .wordmark{
   font-family:var(--serif);

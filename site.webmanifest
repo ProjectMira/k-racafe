@@ -1,0 +1,26 @@
+{
+  "name": "k\u014dra",
+  "short_name": "k\u014dra",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#2F4A35",
+  "background_color": "#faf8f3",
+  "display": "standalone",
+  "start_url": "/"
+}
