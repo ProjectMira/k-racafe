@@ -1,6 +1,6 @@
 # kōra — kōracafe.com
 
-Static site for kōra, a clean-ingredient café opening in Kamla Nagar, Delhi,
+Static site for kōra, a clean-ingredient café opening in Delhi,
 1 November 2026. No build step: plain HTML, CSS and a little vanilla JS.
 
 ```
@@ -62,7 +62,13 @@ GoDaddy from `ns69/ns70.domaincontrol.com` to the pair Cloudflare assigns.
 
 ## Still to fill in
 
-- Exact street address in Kamla Nagar (`#visit`, and the JSON-LD block)
+- **Neighbourhood and street address.** Not settled. Six Kamla Nagar /
+  Jawahar Nagar properties were shortlisted, none signed; the 11 Aug 2026
+  notes then open up Civil Lines, Hauz Khas, Lodhi Garden and Sunder
+  Nursery. The site says "Delhi" only until this is decided (`#visit`,
+  `<title>`, meta description, JSON-LD, footer)
+- Sourcing claims. Suppliers are shortlisted, not contracted — nothing
+  about coffee origin, dairy or tea is published yet
 - Opening hours
 - Phone / email / Instagram — no contact details exist in the brand docs yet
 - Prices — the menu is deliberately price-free for now

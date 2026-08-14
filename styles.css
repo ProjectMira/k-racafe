@@ -211,6 +211,10 @@ footer .glyph{width:3.6rem;height:3.6rem;margin:0 auto}
 .details dd{
   margin:0;font-family:var(--serif);font-size:1.15rem;line-height:1.45;
 }
+.details .tbc{
+  display:block;margin-top:.35rem;
+  font-family:var(--sans);font-size:.8rem;color:var(--ink-soft);
+}
 .visit-note{margin:0;max-width:48ch;color:var(--ink-soft);font-size:.95rem}
 
 /* ---------- footer ---------- */

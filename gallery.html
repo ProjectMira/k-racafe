@@ -4,29 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kōra — drink studies</title>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#faf8f3; --ink:#111; --ink-soft:#4a4a46;
-    --green:#2f4a35; --line:#e0dacd;
+    --green:#2f4a35; --line:#e6e2d8;
     --serif:"Fraunces",Georgia,serif;
     --sans:"Inter",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300}
   header{padding:clamp(3rem,8vw,5rem) clamp(1.25rem,5vw,3.5rem) 2rem;max-width:1200px;margin:0 auto}
-  .glyph{display:inline-flex;align-items:center;justify-content:center;width:2.15rem;height:2.15rem;
-    background:#fff;color:var(--ink);border:1px solid var(--ink);font-family:var(--serif);
-    font-size:1.35rem;line-height:1;padding-bottom:.28em}
+  .glyph{display:block;width:2.6rem;height:2.6rem}
   h1{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,5vw,3rem);margin:1.25rem 0 .5rem;letter-spacing:-.01em}
-  .sub{color:var(--ink-soft);margin:0;max-width:52ch}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(1.5rem,3vw,2.5rem);
+  .sub{color:var(--ink-soft);margin:0;max-width:54ch;line-height:1.6}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(1.5rem,3vw,2.5rem);
     max-width:1200px;margin:0 auto;padding:2rem clamp(1.25rem,5vw,3.5rem) 5rem}
   figure{margin:0}
-  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line)}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);background:#fff}
   figcaption{padding:1rem .2rem 0}
+  figcaption .cat{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin:0 0 .4rem}
   figcaption h2{font-family:var(--serif);font-weight:400;font-size:1.1rem;margin:0 0 .3rem}
   figcaption p{margin:0;font-size:.88rem;color:var(--ink-soft);line-height:1.55}
 </style>
@@ -34,482 +34,289 @@
 <body>
 
 <header>
-  <span class="glyph">ō</span>
+  <svg class="glyph" viewBox="0 0 512 512" aria-hidden="true">
+    <rect width="512" height="512" fill="#fff"/>
+    <rect x="8" y="8" width="496" height="496" fill="none" stroke="#111" stroke-width="16"/>
+    <rect x="172" y="97" width="168" height="38" fill="#111"/>
+    <circle cx="256" cy="300" r="96" fill="none" stroke="#111" stroke-width="38"/>
+  </svg>
   <h1>Drink studies</h1>
-  <p class="sub">Six menu items, drawn as studio compositions. Vector — so they stay
-  sharp at any size, print or screen, and weigh a few kilobytes each.</p>
+  <p class="sub">One from each section of the menu. Clear cup, white seamless,
+  soft studio light — nothing in motion, nothing extra.</p>
 </header>
 
 <div class="grid">
 
-<!-- ============ 1. COLD BREW — pour in motion ============ -->
+<!-- ============================ SPARKLING ============================ -->
 <figure>
-<svg viewBox="0 0 600 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cold brew coffee in a kōra cup with coffee pouring in">
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Butterfly lime soda in a clear kōra cup">
   <defs>
-    <linearGradient id="bg-cb" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#cfdcc4"/><stop offset="1" stop-color="#a8bd9c"/>
+    <linearGradient id="l-bl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f7fd6"/><stop offset=".45" stop-color="#6a56c8"/>
+      <stop offset=".78" stop-color="#a049b0"/><stop offset="1" stop-color="#cf5f96"/>
     </linearGradient>
-    <radialGradient id="glow-cb" cx="50%" cy="38%" r="62%">
-      <stop offset="0" stop-color="#f2f7ec" stop-opacity=".85"/>
-      <stop offset="1" stop-color="#f2f7ec" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="liq-cb" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#6b4126"/><stop offset=".35" stop-color="#40220f"/>
-      <stop offset="1" stop-color="#24120a"/>
-    </linearGradient>
-    <linearGradient id="foam-cb" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e8d3b6"/><stop offset="1" stop-color="#c9a274"/>
-    </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="g-bl" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
-      <stop offset=".5" stop-color="#fff" stop-opacity=".05"/>
-      <stop offset="1" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset=".18" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".82" stop-color="#fff" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".4"/>
     </linearGradient>
-    <clipPath id="cup-cb"><path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"/></clipPath>
-    <filter id="soft-cb" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="14"/>
-    </filter>
-    <filter id="blur-sm-cb" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
+    <clipPath id="c-bl"><path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"/></clipPath>
+    <filter id="sh-bl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <linearGradient id="rf-bl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="rm-bl"><rect x="0" y="684" width="600" height="150" fill="url(#rf-bl)"/></mask>
   </defs>
 
-  <rect width="600" height="780" fill="url(#bg-cb)"/>
-  <rect width="600" height="780" fill="url(#glow-cb)"/>
-  <ellipse cx="300" cy="706" rx="150" ry="22" fill="#2b3a24" opacity=".28" filter="url(#soft-cb)"/>
+  <rect width="600" height="800" fill="#fff"/>
+  <g mask="url(#rm-bl)" transform="translate(0,1368) scale(1,-1)" opacity=".5">
+    <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z" fill="url(#l-bl)" opacity=".5"/>
+  </g>
+  <ellipse cx="300" cy="690" rx="132" ry="15" fill="#2a2440" opacity=".2" filter="url(#sh-bl)"/>
 
-  <!-- pouring stream -->
-  <path d="M300 0 C296 60 306 110 302 168 C300 190 300 196 300 214"
-        stroke="#3c1f0e" stroke-width="17" fill="none" stroke-linecap="round" opacity=".92"/>
-  <path d="M296 0 C292 60 302 110 298 168" stroke="#7a4a29" stroke-width="4" fill="none" opacity=".55"/>
-
-  <!-- cup body -->
-  <g clip-path="url(#cup-cb)">
-    <rect x="150" y="214" width="300" height="480" fill="#e9eee4" opacity=".55"/>
-    <rect x="150" y="300" width="300" height="394" fill="url(#liq-cb)"/>
-    <rect x="150" y="292" width="300" height="26" fill="url(#foam-cb)" opacity=".95"/>
-    <ellipse cx="300" cy="296" rx="150" ry="16" fill="#f0dcc0" opacity=".9"/>
-    <!-- ice -->
-    <g opacity=".3">
-      <rect x="212" y="340" width="72" height="66" rx="12" fill="#fff" transform="rotate(-14 248 373)"/>
-      <rect x="308" y="372" width="66" height="62" rx="12" fill="#fff" transform="rotate(18 341 403)"/>
-      <rect x="240" y="452" width="80" height="70" rx="13" fill="#fff" transform="rotate(8 280 487)"/>
-      <rect x="318" y="500" width="60" height="56" rx="11" fill="#fff" transform="rotate(-22 348 528)"/>
-      <rect x="216" y="560" width="66" height="60" rx="12" fill="#fff" transform="rotate(26 249 590)"/>
+  <g clip-path="url(#c-bl)">
+    <rect x="150" y="216" width="300" height="470" fill="#fbfcfd"/>
+    <rect x="150" y="262" width="300" height="424" fill="url(#l-bl)"/>
+    <g fill="#fff" opacity=".38">
+      <circle cx="238" cy="596" r="4.5"/><circle cx="258" cy="530" r="3"/>
+      <circle cx="246" cy="462" r="4"/><circle cx="352" cy="608" r="3.5"/>
+      <circle cx="366" cy="540" r="4.5"/><circle cx="350" cy="470" r="3"/>
+      <circle cx="300" cy="566" r="3"/><circle cx="306" cy="496" r="4"/>
     </g>
-    <rect x="165" y="214" width="26" height="480" fill="url(#shine)" opacity=".5"/>
-    <rect x="404" y="214" width="14" height="480" fill="#fff" opacity=".22"/>
-  </g>
-  <path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"
-        fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2.5"/>
-
-  <!-- lid -->
-  <path d="M156 190 L444 190 L438 216 L162 216 Z" fill="#f4f6f0" opacity=".95"/>
-  <path d="M156 190 L444 190 L441 199 L159 199 Z" fill="#fff" opacity=".8"/>
-
-  <!-- crema ripple rings where the stream lands -->
-  <g fill="none" stroke="#8a5a33" opacity=".5">
-    <ellipse cx="300" cy="298" rx="34" ry="7" stroke-width="3"/>
-    <ellipse cx="300" cy="300" rx="62" ry="11" stroke-width="2" opacity=".7"/>
-    <ellipse cx="300" cy="302" rx="94" ry="14" stroke-width="1.5" opacity=".45"/>
-  </g>
-  <!-- flying droplets outside cup -->
-  <g opacity=".6" filter="url(#blur-sm-cb)">
-    <circle cx="176" cy="250" r="6" fill="#3c1f0e"/>
-    <circle cx="432" cy="232" r="5" fill="#3c1f0e"/>
-    <circle cx="150" cy="330" r="4" fill="#3c1f0e"/>
+    <g opacity=".2">
+      <rect x="222" y="306" width="66" height="60" rx="12" fill="#fff" transform="rotate(-14 255 336)"/>
+      <rect x="318" y="344" width="58" height="54" rx="11" fill="#fff" transform="rotate(19 347 371)"/>
+      <rect x="248" y="418" width="68" height="60" rx="12" fill="#fff" transform="rotate(8 282 448)"/>
+    </g>
+    <rect x="150" y="216" width="300" height="470" fill="url(#g-bl)"/>
   </g>
 
-  <!-- logo -->
-  <g transform="translate(300 450)">
-    <rect x="-52" y="-52" width="104" height="104" fill="#fff" stroke="#111" stroke-width="3"/>
-    <text x="0" y="26" font-family="Georgia,serif" font-size="76" fill="#111" text-anchor="middle">ō</text>
-  </g>
-  <!-- condensation -->
-  <g fill="#fff" opacity=".4">
-    <circle cx="196" cy="420" r="3.5"/><circle cx="205" cy="500" r="2.5"/>
-    <circle cx="392" cy="380" r="3"/><circle cx="386" cy="470" r="2.5"/>
-    <circle cx="222" cy="620" r="3"/><circle cx="372" cy="600" r="2.5"/>
+  <ellipse cx="300" cy="262" rx="150" ry="16" fill="#5f92dd" opacity=".85" clip-path="url(#c-bl)"/>
+  <ellipse cx="300" cy="216" rx="134" ry="14" fill="none" stroke="#cfd6de" stroke-width="3"/>
+  <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"
+        fill="none" stroke="#cfd6de" stroke-width="2.5"/>
+
+  <g transform="translate(300 452) scale(.2)">
+    <rect x="-256" y="-256" width="512" height="512" fill="#fff"/>
+    <rect x="-248" y="-248" width="496" height="496" fill="none" stroke="#111" stroke-width="16"/>
+    <rect x="-84" y="-159" width="168" height="38" fill="#111"/>
+    <circle cx="0" cy="44" r="96" fill="none" stroke="#111" stroke-width="38"/>
   </g>
 </svg>
-<figcaption><h2>Cold Brew</h2><p>Smooth, slow-steeped 18-hour cold brew coffee over ice.</p></figcaption>
+<figcaption><p class="cat">Sparkling</p><h2>Butterfly Lime Soda</h2><p>Colour-changing floral butterfly pea tea layered over zesty lime soda.</p></figcaption>
 </figure>
 
-<!-- ============ 2. STRAWBERRY MATCHA LATTE — layered ============ -->
+<!-- ========================= COFFEE & MILK ========================== -->
 <figure>
-<svg viewBox="0 0 600 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Strawberry matcha latte with layered pink, milk and green">
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cold brew coffee in a clear kōra cup">
   <defs>
-    <linearGradient id="bg-sm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f3d9dd"/><stop offset="1" stop-color="#cbd9c0"/>
+    <linearGradient id="l-cb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c3720"/><stop offset=".4" stop-color="#3a1e0e"/>
+      <stop offset="1" stop-color="#22110a"/>
     </linearGradient>
-    <radialGradient id="glow-sm" cx="50%" cy="34%" r="60%">
-      <stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="matcha-sm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8fb96a"/><stop offset="1" stop-color="#5f8f43"/>
+    <linearGradient id="g-cb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".18" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset=".82" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".34"/>
     </linearGradient>
-    <linearGradient id="milk-sm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#f3ece0"/>
+    <clipPath id="c-cb"><path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"/></clipPath>
+    <filter id="sh-cb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <linearGradient id="rf-cb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="straw-sm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e8677f"/><stop offset="1" stop-color="#c33d5a"/>
-    </linearGradient>
-    <clipPath id="cup-sm"><path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"/></clipPath>
-    <filter id="soft-sm" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+    <mask id="rm-cb"><rect x="0" y="684" width="600" height="150" fill="url(#rf-cb)"/></mask>
   </defs>
 
-  <rect width="600" height="780" fill="url(#bg-sm)"/>
-  <rect width="600" height="780" fill="url(#glow-sm)"/>
-  <ellipse cx="300" cy="706" rx="150" ry="22" fill="#6b4550" opacity=".25" filter="url(#soft-sm)"/>
+  <rect width="600" height="800" fill="#fff"/>
+  <g mask="url(#rm-cb)" transform="translate(0,1368) scale(1,-1)" opacity=".5">
+    <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z" fill="url(#l-cb)" opacity=".5"/>
+  </g>
+  <ellipse cx="300" cy="690" rx="132" ry="15" fill="#2b1a10" opacity=".22" filter="url(#sh-cb)"/>
 
-  <g clip-path="url(#cup-sm)">
-    <rect x="150" y="214" width="300" height="480" fill="#fff" opacity=".5"/>
-    <rect x="150" y="520" width="300" height="174" fill="url(#straw-sm)"/>
-    <rect x="150" y="382" width="300" height="146" fill="url(#milk-sm)"/>
-    <rect x="150" y="240" width="300" height="146" fill="url(#matcha-sm)"/>
-    <!-- feathered boundaries -->
-    <ellipse cx="300" cy="386" rx="150" ry="20" fill="#c9dbb3" opacity=".8"/>
-    <ellipse cx="300" cy="524" rx="150" ry="20" fill="#f0b6c0" opacity=".85"/>
-    <g opacity=".28">
-      <rect x="218" y="286" width="70" height="64" rx="12" fill="#fff" transform="rotate(-16 253 318)"/>
-      <rect x="312" y="320" width="62" height="58" rx="11" fill="#fff" transform="rotate(20 343 349)"/>
-      <rect x="236" y="410" width="76" height="66" rx="12" fill="#fff" transform="rotate(10 274 443)"/>
-      <rect x="322" y="560" width="58" height="54" rx="11" fill="#fff" transform="rotate(-24 351 587)"/>
+  <g clip-path="url(#c-cb)">
+    <rect x="150" y="216" width="300" height="470" fill="#fbfbfa"/>
+    <rect x="150" y="286" width="300" height="400" fill="url(#l-cb)"/>
+    <g opacity=".22">
+      <rect x="216" y="330" width="70" height="64" rx="12" fill="#fff" transform="rotate(-15 251 362)"/>
+      <rect x="312" y="368" width="62" height="58" rx="11" fill="#fff" transform="rotate(20 343 397)"/>
+      <rect x="242" y="446" width="74" height="64" rx="12" fill="#fff" transform="rotate(7 279 478)"/>
+      <rect x="320" y="520" width="58" height="54" rx="11" fill="#fff" transform="rotate(-22 349 547)"/>
     </g>
-    <rect x="165" y="214" width="26" height="480" fill="url(#shine)" opacity=".55"/>
-    <rect x="404" y="214" width="14" height="480" fill="#fff" opacity=".25"/>
-  </g>
-  <path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"
-        fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5"/>
-
-  <!-- dome lid + straw -->
-  <path d="M158 214 Q300 118 442 214 Z" fill="#fff" opacity=".4"/>
-  <path d="M158 214 Q300 118 442 214" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3"/>
-  <g transform="rotate(12 300 160)">
-    <rect x="286" y="60" width="28" height="180" rx="7" fill="#3f5140" opacity=".9"/>
-    <rect x="292" y="60" width="8" height="180" fill="#fff" opacity=".25"/>
+    <rect x="150" y="216" width="300" height="470" fill="url(#g-cb)"/>
   </g>
 
-  <!-- matcha dust falling -->
-  <g fill="#6f9c4d" opacity=".55">
-    <circle cx="212" cy="120" r="4"/><circle cx="246" cy="72" r="3"/>
-    <circle cx="382" cy="98" r="3.5"/><circle cx="414" cy="150" r="3"/>
-    <circle cx="176" cy="188" r="2.5"/><circle cx="440" cy="206" r="2.5"/>
-  </g>
+  <ellipse cx="300" cy="286" rx="150" ry="16" fill="#7a4a2a" opacity=".9" clip-path="url(#c-cb)"/>
+  <ellipse cx="300" cy="216" rx="134" ry="14" fill="none" stroke="#d2d0cb" stroke-width="3"/>
+  <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"
+        fill="none" stroke="#d2d0cb" stroke-width="2.5"/>
 
-  <g transform="translate(300 452)">
-    <rect x="-52" y="-52" width="104" height="104" fill="#fff" stroke="#111" stroke-width="3"/>
-    <text x="0" y="26" font-family="Georgia,serif" font-size="76" fill="#111" text-anchor="middle">ō</text>
-  </g>
-  <g fill="#fff" opacity=".45">
-    <circle cx="198" cy="440" r="3.5"/><circle cx="208" cy="530" r="2.5"/>
-    <circle cx="390" cy="410" r="3"/><circle cx="380" cy="520" r="2.5"/>
+  <g transform="translate(300 452) scale(.2)">
+    <rect x="-256" y="-256" width="512" height="512" fill="#fff"/>
+    <rect x="-248" y="-248" width="496" height="496" fill="none" stroke="#111" stroke-width="16"/>
+    <rect x="-84" y="-159" width="168" height="38" fill="#111"/>
+    <circle cx="0" cy="44" r="96" fill="none" stroke="#111" stroke-width="38"/>
   </g>
 </svg>
-<figcaption><h2>Strawberry Matcha Latte</h2><p>Earthy ceremonial matcha layered over cold milk and rich strawberry purée.</p></figcaption>
+<figcaption><p class="cat">Coffee &amp; Milk</p><h2>Cold Brew</h2><p>Smooth, slow-steeped 18-hour cold brew coffee over ice.</p></figcaption>
 </figure>
 
-<!-- ============ 3. COCONUT MATCHA — swirl in motion ============ -->
+<!-- ======================= FRUIT & MILK TEA ========================= -->
 <figure>
-<svg viewBox="0 0 600 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coconut matcha latte with swirling milk">
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Iced strawberry milk in a clear kōra cup">
   <defs>
-    <linearGradient id="bg-cm" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#dfe9d3"/><stop offset="1" stop-color="#b3c8a4"/>
+    <linearGradient id="l-sm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdfaf6"/><stop offset=".42" stop-color="#fbeef0"/>
+      <stop offset=".62" stop-color="#f2b9c6"/><stop offset="1" stop-color="#d9536f"/>
     </linearGradient>
-    <radialGradient id="glow-cm" cx="46%" cy="32%" r="58%">
-      <stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="liq-cm" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#a6c983"/><stop offset=".55" stop-color="#7fae5c"/>
-      <stop offset="1" stop-color="#e9f0e0"/>
+    <linearGradient id="g-sm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".18" stop-color="#fff" stop-opacity=".05"/>
+      <stop offset=".82" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".34"/>
     </linearGradient>
-    <clipPath id="cup-cm"><path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"/></clipPath>
-    <filter id="soft-cm" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
-    <filter id="swirl-cm" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+    <clipPath id="c-sm"><path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"/></clipPath>
+    <filter id="sh-sm" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <linearGradient id="rf-sm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="rm-sm"><rect x="0" y="684" width="600" height="150" fill="url(#rf-sm)"/></mask>
   </defs>
 
-  <rect width="600" height="780" fill="url(#bg-cm)"/>
-  <rect width="600" height="780" fill="url(#glow-cm)"/>
-  <ellipse cx="300" cy="706" rx="150" ry="22" fill="#3f5b31" opacity=".25" filter="url(#soft-cm)"/>
+  <rect width="600" height="800" fill="#fff"/>
+  <g mask="url(#rm-sm)" transform="translate(0,1368) scale(1,-1)" opacity=".5">
+    <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z" fill="url(#l-sm)" opacity=".5"/>
+  </g>
+  <ellipse cx="300" cy="690" rx="132" ry="15" fill="#7a3a48" opacity=".18" filter="url(#sh-sm)"/>
 
-  <g clip-path="url(#cup-cm)">
-    <rect x="150" y="214" width="300" height="480" fill="#fff" opacity=".5"/>
-    <rect x="150" y="252" width="300" height="442" fill="url(#liq-cm)"/>
-    <!-- coconut milk swirls -->
-    <g filter="url(#swirl-cm)" opacity=".85">
-      <path d="M170 470 C240 420 300 540 370 470 C410 432 430 470 440 500 L440 560 C380 600 320 520 250 566 C210 592 180 560 168 528 Z" fill="#fdfaf3"/>
-      <path d="M180 350 C240 316 268 392 330 356 C368 334 400 356 420 380" stroke="#fdfaf3" stroke-width="20" fill="none" opacity=".85" stroke-linecap="round"/>
-      <path d="M196 620 C250 590 300 648 360 616" stroke="#fdfaf3" stroke-width="16" fill="none" opacity=".7" stroke-linecap="round"/>
-    </g>
-    <ellipse cx="300" cy="256" rx="150" ry="17" fill="#c3dda6" opacity=".95"/>
+  <g clip-path="url(#c-sm)">
+    <rect x="150" y="216" width="300" height="470" fill="#fdfcfb"/>
+    <rect x="150" y="268" width="300" height="418" fill="url(#l-sm)"/>
     <g opacity=".26">
-      <rect x="222" y="300" width="68" height="62" rx="12" fill="#fff" transform="rotate(-18 256 331)"/>
-      <rect x="316" y="342" width="60" height="56" rx="11" fill="#fff" transform="rotate(22 346 370)"/>
+      <rect x="220" y="312" width="68" height="62" rx="12" fill="#fff" transform="rotate(-16 254 343)"/>
+      <rect x="316" y="352" width="60" height="56" rx="11" fill="#fff" transform="rotate(21 346 380)"/>
+      <rect x="244" y="428" width="72" height="62" rx="12" fill="#fff" transform="rotate(9 280 459)"/>
     </g>
-    <rect x="165" y="214" width="26" height="480" fill="url(#shine)" opacity=".55"/>
-    <rect x="404" y="214" width="14" height="480" fill="#fff" opacity=".25"/>
-  </g>
-  <path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"
-        fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5"/>
-
-  <path d="M156 190 L444 190 L438 216 L162 216 Z" fill="#f4f6f0" opacity=".95"/>
-  <path d="M156 190 L444 190 L441 199 L159 199 Z" fill="#fff" opacity=".8"/>
-
-  <!-- whisk motion arcs above -->
-  <g stroke="#7fae5c" fill="none" opacity=".5" stroke-linecap="round">
-    <path d="M204 150 q96 -54 192 0" stroke-width="5"/>
-    <path d="M228 116 q72 -40 144 0" stroke-width="4" opacity=".7"/>
-    <path d="M252 84 q48 -26 96 0" stroke-width="3" opacity=".5"/>
+    <rect x="150" y="216" width="300" height="470" fill="url(#g-sm)"/>
   </g>
 
-  <g transform="translate(300 452)">
-    <rect x="-52" y="-52" width="104" height="104" fill="#fff" stroke="#111" stroke-width="3"/>
-    <text x="0" y="26" font-family="Georgia,serif" font-size="76" fill="#111" text-anchor="middle">ō</text>
-  </g>
-  <g fill="#fff" opacity=".45">
-    <circle cx="200" cy="430" r="3.5"/><circle cx="206" cy="516" r="2.5"/>
-    <circle cx="392" cy="404" r="3"/><circle cx="382" cy="512" r="2.5"/>
+  <ellipse cx="300" cy="268" rx="150" ry="16" fill="#fffdfb" opacity=".95" clip-path="url(#c-sm)"/>
+  <ellipse cx="300" cy="216" rx="134" ry="14" fill="none" stroke="#dcd6d4" stroke-width="3"/>
+  <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"
+        fill="none" stroke="#dcd6d4" stroke-width="2.5"/>
+
+  <g transform="translate(300 452) scale(.2)">
+    <rect x="-256" y="-256" width="512" height="512" fill="#fff"/>
+    <rect x="-248" y="-248" width="496" height="496" fill="none" stroke="#111" stroke-width="16"/>
+    <rect x="-84" y="-159" width="168" height="38" fill="#111"/>
+    <circle cx="0" cy="44" r="96" fill="none" stroke="#111" stroke-width="38"/>
   </g>
 </svg>
-<figcaption><h2>Coconut Matcha Latte</h2><p>Creamy coconut milk blended with whisked Japanese green matcha.</p></figcaption>
+<figcaption><p class="cat">Fruit &amp; Milk Tea</p><h2>Iced Strawberry Milk</h2><p>Rich strawberry fruit purée layered with cold full-cream milk.</p></figcaption>
 </figure>
 
-<!-- ============ 4. BUTTERFLY LIME SODA — colour change + splash ============ -->
+<!-- ========================= COLD PRESSED =========================== -->
 <figure>
-<svg viewBox="0 0 600 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Butterfly pea lime soda changing colour from blue to purple with a lime wheel dropping in">
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABC cold pressed juice in a clear kōra cup">
   <defs>
-    <linearGradient id="bg-bl" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#dbe4f0"/><stop offset="1" stop-color="#b6c3dd"/>
+    <linearGradient id="l-ab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b02a4c"/><stop offset=".5" stop-color="#8a1a3a"/>
+      <stop offset="1" stop-color="#5c0f26"/>
     </linearGradient>
-    <radialGradient id="glow-bl" cx="50%" cy="30%" r="60%">
-      <stop offset="0" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="liq-bl" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2f6fd0"/><stop offset=".42" stop-color="#5a4fc0"/>
-      <stop offset=".74" stop-color="#9b3fae"/><stop offset="1" stop-color="#d24f8e"/>
+    <linearGradient id="g-ab" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".48"/>
+      <stop offset=".18" stop-color="#fff" stop-opacity=".05"/>
+      <stop offset=".82" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".32"/>
     </linearGradient>
-    <clipPath id="cup-bl"><path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"/></clipPath>
-    <filter id="soft-bl" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+    <clipPath id="c-ab"><path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"/></clipPath>
+    <filter id="sh-ab" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <linearGradient id="rf-ab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="rm-ab"><rect x="0" y="684" width="600" height="150" fill="url(#rf-ab)"/></mask>
   </defs>
 
-  <rect width="600" height="780" fill="url(#bg-bl)"/>
-  <rect width="600" height="780" fill="url(#glow-bl)"/>
-  <ellipse cx="300" cy="706" rx="150" ry="22" fill="#3b3363" opacity=".28" filter="url(#soft-bl)"/>
+  <rect width="600" height="800" fill="#fff"/>
+  <g mask="url(#rm-ab)" transform="translate(0,1368) scale(1,-1)" opacity=".5">
+    <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z" fill="url(#l-ab)" opacity=".5"/>
+  </g>
+  <ellipse cx="300" cy="690" rx="132" ry="15" fill="#4a0f22" opacity=".2" filter="url(#sh-ab)"/>
 
-  <g clip-path="url(#cup-bl)">
-    <rect x="150" y="214" width="300" height="480" fill="#fff" opacity=".45"/>
-    <rect x="150" y="268" width="300" height="426" fill="url(#liq-bl)"/>
-    <ellipse cx="300" cy="272" rx="150" ry="17" fill="#5f8fe0" opacity=".9"/>
-    <!-- bubbles rising -->
-    <g fill="#fff" opacity=".5">
-      <circle cx="228" cy="600" r="5"/><circle cx="252" cy="540" r="3.5"/>
-      <circle cx="238" cy="470" r="4.5"/><circle cx="264" cy="404" r="3"/>
-      <circle cx="344" cy="620" r="4"/><circle cx="362" cy="548" r="5"/>
-      <circle cx="348" cy="486" r="3"/><circle cx="368" cy="416" r="4"/>
-      <circle cx="300" cy="580" r="3.5"/><circle cx="308" cy="500" r="4.5"/>
-      <circle cx="296" cy="430" r="3"/>
+  <g clip-path="url(#c-ab)">
+    <rect x="150" y="216" width="300" height="470" fill="#fdfbfb"/>
+    <rect x="150" y="276" width="300" height="410" fill="url(#l-ab)"/>
+    <g fill="#e8798f" opacity=".22">
+      <circle cx="242" cy="344" r="3.5"/><circle cx="330" cy="380" r="3"/>
+      <circle cx="270" cy="438" r="3"/><circle cx="358" cy="484" r="2.5"/>
+      <circle cx="228" cy="522" r="3"/><circle cx="314" cy="574" r="3"/>
+      <circle cx="366" cy="626" r="2.5"/><circle cx="250" cy="638" r="3"/>
     </g>
-    <g opacity=".26">
-      <rect x="216" y="316" width="70" height="64" rx="12" fill="#fff" transform="rotate(-15 251 348)"/>
-      <rect x="316" y="356" width="62" height="58" rx="11" fill="#fff" transform="rotate(21 347 385)"/>
-      <rect x="244" y="452" width="72" height="64" rx="12" fill="#fff" transform="rotate(9 280 484)"/>
-    </g>
-    <rect x="165" y="214" width="26" height="480" fill="url(#shine)" opacity=".6"/>
-    <rect x="404" y="214" width="14" height="480" fill="#fff" opacity=".28"/>
-  </g>
-  <path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"
-        fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.5"/>
-
-  <!-- lime wheel dropping + splash -->
-  <g transform="translate(348 148) rotate(-18)">
-    <circle r="42" fill="#c8e06a"/><circle r="36" fill="#e4f3a6"/>
-    <g stroke="#a9c94e" stroke-width="2.5">
-      <line x1="0" y1="-34" x2="0" y2="34"/><line x1="-34" y1="0" x2="34" y2="0"/>
-      <line x1="-24" y1="-24" x2="24" y2="24"/><line x1="-24" y1="24" x2="24" y2="-24"/>
-    </g>
-    <circle r="6" fill="#d6ea8c"/>
-  </g>
-  <!-- ripple where the wheel breaks the surface, plus thrown droplets -->
-  <g fill="none" stroke="#7f6fd8" opacity=".55">
-    <ellipse cx="332" cy="268" rx="30" ry="6" stroke-width="3"/>
-    <ellipse cx="332" cy="270" rx="58" ry="10" stroke-width="2" opacity=".7"/>
-    <ellipse cx="332" cy="272" rx="88" ry="13" stroke-width="1.5" opacity=".45"/>
-  </g>
-  <g fill="#5a4fc0" opacity=".8">
-    <circle cx="392" cy="222" r="7"/>
-    <circle cx="424" cy="256" r="4.5"/>
-    <circle cx="268" cy="238" r="5"/>
+    <rect x="150" y="216" width="300" height="470" fill="url(#g-ab)"/>
   </g>
 
-  <g transform="translate(300 452)">
-    <rect x="-52" y="-52" width="104" height="104" fill="#fff" stroke="#111" stroke-width="3"/>
-    <text x="0" y="26" font-family="Georgia,serif" font-size="76" fill="#111" text-anchor="middle">ō</text>
-  </g>
-  <g fill="#fff" opacity=".45">
-    <circle cx="198" cy="430" r="3.5"/><circle cx="206" cy="518" r="2.5"/>
-    <circle cx="392" cy="400" r="3"/><circle cx="384" cy="516" r="2.5"/>
+  <ellipse cx="300" cy="276" rx="150" ry="16" fill="#c43f5e" opacity=".9" clip-path="url(#c-ab)"/>
+  <ellipse cx="300" cy="216" rx="134" ry="14" fill="none" stroke="#d8d0d1" stroke-width="3"/>
+  <path d="M166 216 L434 216 L388 668 Q386 684 370 684 L230 684 Q214 684 212 668 Z"
+        fill="none" stroke="#d8d0d1" stroke-width="2.5"/>
+
+  <g transform="translate(300 452) scale(.2)">
+    <rect x="-256" y="-256" width="512" height="512" fill="#fff"/>
+    <rect x="-248" y="-248" width="496" height="496" fill="none" stroke="#111" stroke-width="16"/>
+    <rect x="-84" y="-159" width="168" height="38" fill="#111"/>
+    <circle cx="0" cy="44" r="96" fill="none" stroke="#111" stroke-width="38"/>
   </g>
 </svg>
-<figcaption><h2>Butterfly Lime Soda</h2><p>Colour-changing floral butterfly pea tea layered over zesty lime soda.</p></figcaption>
+<figcaption><p class="cat">Cold Pressed</p><h2>ABC Juice</h2><p>Powerhouse blend of fresh apple, beetroot and carrot.</p></figcaption>
 </figure>
 
-<!-- ============ 5. ABC JUICE — bottle + glass ============ -->
+<!-- ======================== WELLNESS SHOTS ========================== -->
 <figure>
-<svg viewBox="0 0 600 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABC cold pressed juice of apple beetroot and carrot">
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ginger turmeric lemon wellness shot in a clear kōra glass">
   <defs>
-    <linearGradient id="bg-ab" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f0dcd8"/><stop offset="1" stop-color="#cdb3ae"/>
+    <linearGradient id="l-gt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f9b53a"/><stop offset="1" stop-color="#c86e08"/>
     </linearGradient>
-    <radialGradient id="glow-ab" cx="50%" cy="32%" r="58%">
-      <stop offset="0" stop-color="#fff" stop-opacity=".8"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="liq-ab" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#b52a4e"/><stop offset=".5" stop-color="#8e1b3c"/>
-      <stop offset="1" stop-color="#5e0f28"/>
+    <linearGradient id="g-gt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset=".2" stop-color="#fff" stop-opacity=".05"/>
+      <stop offset=".8" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".34"/>
     </linearGradient>
-    <clipPath id="cup-ab"><path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"/></clipPath>
-    <filter id="soft-ab" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+    <clipPath id="c-gt"><path d="M200 270 L400 270 L382 676 Q380 690 366 690 L234 690 Q220 690 218 676 Z"/></clipPath>
+    <filter id="sh-gt" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <linearGradient id="rf-gt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="rm-gt"><rect x="0" y="690" width="600" height="140" fill="url(#rf-gt)"/></mask>
   </defs>
 
-  <rect width="600" height="780" fill="url(#bg-ab)"/>
-  <rect width="600" height="780" fill="url(#glow-ab)"/>
-  <ellipse cx="300" cy="706" rx="150" ry="22" fill="#59182c" opacity=".28" filter="url(#soft-ab)"/>
-
-  <g clip-path="url(#cup-ab)">
-    <rect x="150" y="214" width="300" height="480" fill="#fff" opacity=".45"/>
-    <rect x="150" y="286" width="300" height="408" fill="url(#liq-ab)"/>
-    <ellipse cx="300" cy="290" rx="150" ry="17" fill="#c73f5e" opacity=".95"/>
-    <!-- suspended pulp -->
-    <g fill="#e8798f" opacity=".28">
-      <circle cx="244" cy="348" r="4"/><circle cx="332" cy="382" r="3"/>
-      <circle cx="272" cy="440" r="3.5"/><circle cx="360" cy="486" r="3"/>
-      <circle cx="228" cy="524" r="3"/><circle cx="316" cy="576" r="3.5"/>
-      <circle cx="368" cy="628" r="2.5"/><circle cx="252" cy="640" r="3"/>
-    </g>
-    <rect x="165" y="214" width="26" height="480" fill="url(#shine)" opacity=".5"/>
-    <rect x="404" y="214" width="14" height="480" fill="#fff" opacity=".22"/>
+  <rect width="600" height="800" fill="#fff"/>
+  <g mask="url(#rm-gt)" transform="translate(0,1380) scale(1,-1)" opacity=".5">
+    <path d="M200 270 L400 270 L382 676 Q380 690 366 690 L234 690 Q220 690 218 676 Z" fill="url(#l-gt)" opacity=".5"/>
   </g>
-  <path d="M165 214 L435 214 L387 676 Q385 692 369 692 L231 692 Q215 692 213 676 Z"
-        fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5"/>
+  <ellipse cx="300" cy="696" rx="108" ry="14" fill="#6b3d05" opacity=".2" filter="url(#sh-gt)"/>
 
-  <path d="M156 190 L444 190 L438 216 L162 216 Z" fill="#f4f6f0" opacity=".95"/>
-  <path d="M156 190 L444 190 L441 199 L159 199 Z" fill="#fff" opacity=".8"/>
-
-  <!-- produce, resting on the same surface as the cup -->
-  <ellipse cx="118" cy="672" rx="52" ry="12" fill="#59182c" opacity=".22" filter="url(#soft-ab)"/>
-  <g transform="translate(118 628)">
-    <path d="M0 -34 C30 -46 52 -24 48 4 C45 30 24 44 0 44 C-24 44 -45 30 -48 4 C-52 -24 -30 -46 0 -34 Z" fill="#c0392b"/>
-    <path d="M-30 -22 C-40 -10 -42 8 -36 22" stroke="#fff" stroke-width="7" fill="none" opacity=".22" stroke-linecap="round"/>
-    <path d="M0 -36 q4 -22 20 -30" stroke="#5c3a1e" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <path d="M4 -40 q22 -12 38 -4" stroke="#4a7c3f" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <g clip-path="url(#c-gt)">
+    <rect x="190" y="270" width="220" height="424" fill="#fdfcfa"/>
+    <rect x="190" y="340" width="220" height="354" fill="url(#l-gt)"/>
+    <rect x="190" y="270" width="220" height="424" fill="url(#g-gt)"/>
   </g>
 
-  <ellipse cx="486" cy="676" rx="46" ry="11" fill="#59182c" opacity=".22" filter="url(#soft-ab)"/>
-  <g transform="translate(486 630)">
-    <path d="M0 -34 C28 -34 38 -10 26 20 C17 42 -17 42 -26 20 C-38 -10 -28 -34 0 -34 Z" fill="#8e1b3c"/>
-    <path d="M-16 -22 C-24 -8 -24 8 -18 20" stroke="#fff" stroke-width="6" fill="none" opacity=".18" stroke-linecap="round"/>
-    <path d="M0 -34 q-6 -24 -24 -32" stroke="#4a7c3f" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M0 -34 q10 -22 30 -26" stroke="#4a7c3f" stroke-width="7" fill="none" stroke-linecap="round"/>
-  </g>
+  <ellipse cx="300" cy="340" rx="96" ry="13" fill="#ffc65c" opacity=".95" clip-path="url(#c-gt)"/>
+  <ellipse cx="300" cy="270" rx="100" ry="13" fill="none" stroke="#d9d4cc" stroke-width="3"/>
+  <path d="M200 270 L400 270 L382 676 Q380 690 366 690 L234 690 Q220 690 218 676 Z"
+        fill="none" stroke="#d9d4cc" stroke-width="2.5"/>
 
-  <ellipse cx="96" cy="710" rx="56" ry="10" fill="#59182c" opacity=".18" filter="url(#soft-ab)"/>
-  <g transform="translate(96 690) rotate(-74)">
-    <path d="M0 -30 C16 -30 20 -12 11 30 C6 54 -6 54 -11 30 C-20 -12 -16 -30 0 -30 Z" fill="#e0762a"/>
-    <path d="M-6 -4 L-2 22 M6 -8 L3 16" stroke="#c25f18" stroke-width="2.5" opacity=".6"/>
-    <path d="M-2 -32 q-10 -22 -26 -28" stroke="#4a7c3f" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <path d="M2 -32 q10 -24 28 -26" stroke="#4a7c3f" stroke-width="6" fill="none" stroke-linecap="round"/>
-  </g>
-
-  <g transform="translate(300 452)">
-    <rect x="-52" y="-52" width="104" height="104" fill="#fff" stroke="#111" stroke-width="3"/>
-    <text x="0" y="26" font-family="Georgia,serif" font-size="76" fill="#111" text-anchor="middle">ō</text>
-  </g>
-  <g fill="#fff" opacity=".42">
-    <circle cx="198" cy="420" r="3.5"/><circle cx="208" cy="512" r="2.5"/>
-    <circle cx="392" cy="396" r="3"/><circle cx="382" cy="508" r="2.5"/>
-    <circle cx="224" cy="612" r="3"/>
+  <g transform="translate(300 500) scale(.19)">
+    <rect x="-256" y="-256" width="512" height="512" fill="#fff"/>
+    <rect x="-248" y="-248" width="496" height="496" fill="none" stroke="#111" stroke-width="16"/>
+    <rect x="-84" y="-159" width="168" height="38" fill="#111"/>
+    <circle cx="0" cy="44" r="96" fill="none" stroke="#111" stroke-width="38"/>
   </g>
 </svg>
-<figcaption><h2>ABC Juice</h2><p>Powerhouse blend of fresh apple, beetroot and carrot.</p></figcaption>
-</figure>
-
-<!-- ============ 6. GINGER TURMERIC SHOT — splash crown ============ -->
-<figure>
-<svg viewBox="0 0 600 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ginger turmeric wellness shot in a small glass with a splash">
-  <defs>
-    <linearGradient id="bg-gt" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f7e6c4"/><stop offset="1" stop-color="#d9b878"/>
-    </linearGradient>
-    <radialGradient id="glow-gt" cx="50%" cy="34%" r="58%">
-      <stop offset="0" stop-color="#fffdf4" stop-opacity=".9"/><stop offset="1" stop-color="#fffdf4" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="liq-gt" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f5a623"/><stop offset="1" stop-color="#c9700c"/>
-    </linearGradient>
-    <clipPath id="glass-gt"><path d="M232 372 L368 372 L352 656 Q350 670 336 670 L264 670 Q250 670 248 656 Z"/></clipPath>
-    <filter id="soft-gt" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
-  </defs>
-
-  <rect width="600" height="780" fill="url(#bg-gt)"/>
-  <rect width="600" height="780" fill="url(#glow-gt)"/>
-  <ellipse cx="300" cy="684" rx="104" ry="18" fill="#7a4a0b" opacity=".3" filter="url(#soft-gt)"/>
-
-  <g clip-path="url(#glass-gt)">
-    <rect x="220" y="372" width="160" height="300" fill="#fff" opacity=".45"/>
-    <rect x="220" y="430" width="160" height="242" fill="url(#liq-gt)"/>
-    <ellipse cx="300" cy="434" rx="70" ry="11" fill="#ffc056" opacity=".95"/>
-    <rect x="238" y="372" width="16" height="300" fill="url(#shine)" opacity=".6"/>
-    <rect x="344" y="372" width="9" height="300" fill="#fff" opacity=".3"/>
-  </g>
-  <path d="M232 372 L368 372 L352 656 Q350 670 336 670 L264 670 Q250 670 248 656 Z"
-        fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.5"/>
-
-  <!-- pour arcing in from above -->
-  <path d="M486 40 C470 132 402 214 340 286 C324 305 310 336 302 372"
-        stroke="url(#liq-gt)" stroke-width="15" fill="none" stroke-linecap="round" opacity=".95"/>
-  <path d="M482 44 C466 134 400 214 338 286"
-        stroke="#ffd489" stroke-width="4" fill="none" opacity=".55" stroke-linecap="round"/>
-  <g fill="#f0a326" opacity=".75">
-    <circle cx="368" cy="222" r="6"/>
-    <circle cx="404" cy="164" r="4.5"/>
-    <circle cx="284" cy="330" r="4"/>
-    <circle cx="246" cy="356" r="5"/>
-  </g>
-  <!-- ripple on the surface -->
-  <g fill="none" stroke="#c9700c" opacity=".45">
-    <ellipse cx="300" cy="432" rx="22" ry="4.5" stroke-width="2.5"/>
-    <ellipse cx="300" cy="434" rx="42" ry="7" stroke-width="1.8" opacity=".7"/>
-  </g>
-
-  <!-- ginger + turmeric roots, resting on the surface -->
-  <ellipse cx="150" cy="662" rx="62" ry="12" fill="#7a4a0b" opacity=".22" filter="url(#soft-gt)"/>
-  <g transform="translate(150 636) rotate(-10)">
-    <path d="M-52 6 C-56 -14 -38 -26 -18 -22 C-2 -19 6 -28 24 -26 C46 -24 56 -8 50 8 C44 24 22 30 2 24 C-16 19 -30 26 -42 20 C-50 16 -52 12 -52 6 Z" fill="#d9a05b"/>
-    <path d="M22 -26 C34 -44 52 -46 60 -36" stroke="#d9a05b" stroke-width="14" fill="none" stroke-linecap="round"/>
-    <g stroke="#b87f3c" stroke-width="2" opacity=".55" fill="none">
-      <path d="M-24 -20 C-20 -6 -22 8 -30 18"/>
-      <path d="M4 -24 C10 -8 8 10 0 22"/>
-      <path d="M30 -24 C36 -10 34 6 26 20"/>
-    </g>
-  </g>
-
-  <ellipse cx="452" cy="670" rx="54" ry="11" fill="#7a4a0b" opacity=".22" filter="url(#soft-gt)"/>
-  <g transform="translate(452 648) rotate(14)">
-    <path d="M-44 4 C-48 -12 -32 -22 -14 -18 C0 -15 8 -23 24 -21 C42 -19 50 -6 45 7 C40 20 20 25 3 20 C-12 16 -24 22 -34 16 C-42 12 -44 9 -44 4 Z" fill="#e08b16"/>
-    <path d="M24 -21 C34 -36 50 -37 56 -28" stroke="#e08b16" stroke-width="12" fill="none" stroke-linecap="round"/>
-    <g stroke="#b96e08" stroke-width="2" opacity=".5" fill="none">
-      <path d="M-18 -16 C-14 -4 -16 8 -23 16"/>
-      <path d="M6 -20 C11 -6 9 8 2 18"/>
-      <path d="M28 -19 C33 -8 31 5 24 16"/>
-    </g>
-  </g>
-
-  <g transform="translate(300 542)">
-    <rect x="-38" y="-38" width="76" height="76" fill="#fff" stroke="#111" stroke-width="2.5"/>
-    <text x="0" y="19" font-family="Georgia,serif" font-size="56" fill="#111" text-anchor="middle">ō</text>
-  </g>
-</svg>
-<figcaption><h2>Ginger Turmeric Shot</h2><p>Potent blend of raw ginger, anti-inflammatory turmeric root and black pepper.</p></figcaption>
+<figcaption><p class="cat">Wellness Shots</p><h2>Ginger Turmeric Lemon</h2><p>The daily immunity shooter, with anti-inflammatory turmeric.</p></figcaption>
 </figure>
 
 </div>
