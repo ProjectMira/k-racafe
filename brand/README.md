@@ -57,6 +57,48 @@ Glyph-only PNGs have a transparent background; the mark PNGs are opaque.
 
 ### `print/` — vector PDF, 768 pt square, for printers and signage
 
+### `explorations/` — options under review, September 2026
+
+Nothing in here is approved. The current kit above is untouched; these sit
+beside it so both can be compared. Review sheet with live toggles (macron
+sliders, colour chips, the mark in place on the site):
+<https://claude.ai/code/artifact/8a8d7d4c-287b-4d11-9220-076632534d21>
+
+`macron/` — the bar over the ō, a little smaller. The ring never changes; the
+glyph re-centres in its square.
+
+| File | Macron (w × h on the 512 grid) |
+|---|---|
+| `kora-mark-macron-a` | 168 × 38 — current |
+| `kora-mark-macron-b` | 150 × 34 — a little smaller |
+| `kora-mark-macron-c` | 140 × 30 — smaller |
+| `kora-mark-macron-d` | 168 × 30 — same width, thinner |
+
+`colour/` — red, green and blue, two shades each, four layouts each. All
+exported with the current macron; once a macron is chosen the whole kit is
+regenerated with it.
+
+| Shade | Hex |
+|---|---|
+| red | `#B8382C` |
+| maroon | `#7B2A2A` |
+| green | `#2F4A35` (brand) |
+| moss | `#4A7C4E` |
+| blue | `#2F5A96` |
+| navy | `#1F3352` |
+
+| Layout | |
+|---|---|
+| `solid` | colour square, white ō |
+| `paper` | white square, colour rule and ō |
+| `duo` | white square, ink rule, colour ō |
+| `glyph` | ō alone, transparent |
+
+Files are `kora-mark-<shade>-<layout>.svg` with a 512 px PNG beside each.
+
+`macron-sheet.png` and `colour-sheet.png` lay all of the above out on one
+image each, for forwarding.
+
 ### `kora.icns` — macOS app/folder icon
 
 ## Rules
@@ -78,9 +120,19 @@ disappears at small sizes, which is exactly what those variants fix.
 
 ## Rebuilding
 
-The geometry lives in the SVG masters. To regenerate the whole kit at different
-proportions, edit the constants and re-derive every raster from `kora-mark.svg`
-— never upscale a PNG.
+`build.py` is the single source of truth for the geometry and the colours; the
+SVG masters are its output. Never upscale a PNG.
+
+```bash
+python3 brand/build.py check      # constants reproduce brand/svg/ byte for byte
+python3 brand/build.py explore    # exploration sets → brand/explorations/
+python3 brand/build.py masters    # rebuild brand/svg/, brand/png/, brand/print/
+```
+
+PNG and PDF need `rsvg-convert` (`brew install librsvg`). To adopt a new
+macron, change `macron_w` / `macron_h` in `Geometry`, run `masters`, then
+update the inline copies of the mark in `index.html`, `gallery.html` and
+`/favicon.svg`, and re-export `favicon/`, `social/` and `kora.icns`.
 
 ## The wordmark
 
