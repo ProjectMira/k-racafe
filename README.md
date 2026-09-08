@@ -4,9 +4,13 @@ Static site for kōra, a clean-ingredient café opening in Delhi,
 1 November 2026. No build step: plain HTML, CSS and a little vanilla JS.
 
 ```
-index.html    single page — hero, ethos, menu, visit
+index.html    single page — hero, story, ethos, signatures, menu, visit
+gallery.html  drink studies, linked from the signatures section
 styles.css    brand palette + layout
 main.js       menu category tabs (WAI-ARIA tabs pattern)
+img/          drink study SVGs
+brand/        logo kit — svg, png, print, favicon, social; build.py regenerates it
+fonts/        one subset woff2 (see Wordmark below)
 robots.txt    / sitemap.xml
 ```
 
@@ -15,10 +19,23 @@ robots.txt    / sitemap.xml
 | | |
 |---|---|
 | Mark | white square, hairline rule, black `ō` |
-| Wordmark | `kōra` (Fraunces, with Georgia fallback) |
+| Wordmark | `kōra` (Fraunces, with Georgia fallback) — see below |
 | Green | `#2f4a35` — buttons, active tab, accents |
 | Deep green | `#23381f` — footer |
 | Paper | `#faf8f3` · Ink `#111111` |
+
+### The macron
+
+Fraunces' stock `latin-ext` subset on Google Fonts draws `ō` (U+014D) with the
+macron sitting over the *following* letter, so the wordmark renders as "koṟa".
+`fonts/fraunces-omacron.woff2` is a 2 KB single-codepoint subset of Fraunces
+itself (pulled from the Google Fonts `text=` pipeline, which composes the glyph
+correctly; SIL OFL, same as Fraunces). It is declared as its own family,
+`"Kora Macron"`, sitting first in `--serif` and scoped to `unicode-range:
+U+014D` — so it wins for that one character, every other character still comes
+from the CDN, and the file is only downloaded on pages that render an `ō`.
+
+Keep it first in the stack. Dropping it brings the misplaced macron back.
 
 ## Local preview
 
@@ -38,7 +55,11 @@ Push to `main` and the site redeploys automatically.
 git push
 ```
 
-Pages project settings — there is no build step, so:
+Pages project settings — there is no build step, so **the whole repository
+root is published as-is**. Anything committed here is public: business
+documents stay out of the repo (see `.gitignore`), because
+`Kora-documentation/Partners Document/` holds scans of the partners' Aadhaar
+and PAN cards.
 
 | Setting | Value |
 |---|---|
@@ -72,4 +93,4 @@ GoDaddy from `ns69/ns70.domaincontrol.com` to the pair Cloudflare assigns.
 - Opening hours
 - Phone / email / Instagram — no contact details exist in the brand docs yet
 - Prices — the menu is deliberately price-free for now
-- Real photography; the site currently carries no images
+- Real photography; the drink studies in `img/` are illustrations, not photos

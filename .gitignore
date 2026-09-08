@@ -2,6 +2,8 @@
 *.log
 node_modules/
 
-# Business documents live outside this repo on purpose — they contain the
-# partners' personal records and must not be published with the site.
+# Business documents must never be published with the site: this whole tree
+# is the Cloudflare Pages deploy root, and Partners Document/ holds scans of
+# the partners' Aadhaar and PAN cards.
 drive-archive/
+Kora-documentation/
