@@ -1,0 +1,36 @@
+{
+  "view": 1,
+  "name": "Overview \u2014 isometric cutaway",
+  "backend": "gemini",
+  "model": "gemini-3-pro-image",
+  "quality": "high",
+  "size": "1536x1024",
+  "refs": [
+    "massing.png",
+    "floor-plan.png"
+  ],
+  "prompt": "The first reference image is an exact 3D massing model of the caf\u00e9 with every fixture labelled; the second is the dimensioned floor plan it was built from. Keep every object exactly where the model puts it, at its size: the island is two parallel counters with an open walkway between them, the espresso machine, grinders, juicer and sink on the back counter, the pastry case and till on the front counter; the back wall is shelving with the menu board centred over a low shelf and a door at the far left, with no counter against it; three open chillers fill the left wall under a lightbox sign; open snack shelving fills the right wall. Render the massing model photorealistically from exactly its camera position; the output must be a photograph-like render, not a diagram. k\u014dra is a small grab-and-go caf\u00e9 in Delhi. The room is a clean rectangle, 32 feet wide and 19 feet deep, with a full-height glass front onto the street and a 12-by-8-foot island bar in the middle. Materials: pale white-oak timber shelving with thin matte-black steel frames, fluted white-oak counter fronts, honed pale-limestone counter tops, warm off-white lime-plaster walls, pale oak-look porcelain plank floor, one deep forest-green accent used only on the fascia, the outdoor chairs and small signs. Signage is black capital letters on white backlit panels. Light is warm white, 3000 K, from LED strips under every shelf and three opal-glass pendants over the island; daylight comes in through the glass front. Everything is tidy and stocked: rows of clear bottles of cold-pressed juice in orange, red, green and gold, fruit cups, kraft snack bags, white coffee cups. No people unless stated, no clutter, no rustic props, no coffee sacks, no exposed brick, no neon, no readable text anywhere except the signs named in the view. A photorealistic isometric cutaway render of the whole caf\u00e9 seen from above and slightly in front, walls cut at chest height like an architectural model. Street and pavement at the bottom with a centred double glass door, two small round oak tables with forest-green steel chairs on each side of the door, and low planters along the glass. Inside, left wall: three open-front refrigerated displays in an oak surround under a white backlit sign reading GRAB & GO, shelves full of bottled juices, fruit cups and sandwiches. Back wall: a 12-foot black menu board with white lettering hung above a low oak shelf, flanked by floor-to-ceiling oak pantry shelving. Right wall: a 14-foot run of lit pale-oak open shelving stocked with kraft snack bags, labelled DRY SNACKS in small black capitals. Centre: the 12-by-8-foot island, two parallel counters with fluted oak sides and pale stone tops and an open walkway between them; on the back counter a two-group espresso machine, two grinders and a cold-press juicer, on the front counter a glass pastry case and a till, three pendants above. Soft even daylight, gentle shadows, architectural visualisation quality, 3:2.",
+  "usage": {
+    "promptTokenCount": 1182,
+    "candidatesTokenCount": 1720,
+    "totalTokenCount": 3302,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 666
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 516
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1120
+      }
+    ],
+    "thoughtsTokenCount": 400,
+    "serviceTier": "standard"
+  }
+}

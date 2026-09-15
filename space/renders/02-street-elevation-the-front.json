@@ -1,0 +1,37 @@
+{
+  "view": 2,
+  "name": "Street elevation \u2014 the front",
+  "backend": "gemini",
+  "model": "gemini-3-pro-image",
+  "quality": "high",
+  "size": "1536x1024",
+  "refs": [
+    "massing.png",
+    "floor-plan.png",
+    "01-overview-isometric-cutaway.png"
+  ],
+  "prompt": "The first reference image is an exact 3D massing model of the caf\u00e9 with every fixture labelled; the second is the dimensioned floor plan it was built from. Keep every object exactly where the model puts it, at its size: the island is two parallel counters with an open walkway between them, the espresso machine, grinders, juicer and sink on the back counter, the pastry case and till on the front counter; the back wall is shelving with the menu board centred over a low shelf and a door at the far left, with no counter against it; three open chillers fill the left wall under a lightbox sign; open snack shelving fills the right wall. The third reference is the approved overview render of the same caf\u00e9: match its materials, colours and lighting, and render the view described below from inside that exact space. k\u014dra is a small grab-and-go caf\u00e9 in Delhi. The room is a clean rectangle, 32 feet wide and 19 feet deep, with a full-height glass front onto the street and a 12-by-8-foot island bar in the middle. Materials: pale white-oak timber shelving with thin matte-black steel frames, fluted white-oak counter fronts, honed pale-limestone counter tops, warm off-white lime-plaster walls, pale oak-look porcelain plank floor, one deep forest-green accent used only on the fascia, the outdoor chairs and small signs. Signage is black capital letters on white backlit panels. Light is warm white, 3000 K, from LED strips under every shelf and three opal-glass pendants over the island; daylight comes in through the glass front. Everything is tidy and stocked: rows of clear bottles of cold-pressed juice in orange, red, green and gold, fruit cups, kraft snack bags, white coffee cups. No people unless stated, no clutter, no rustic props, no coffee sacks, no exposed brick, no neon, no readable text anywhere except the signs named in the view. A photorealistic straight-on exterior photograph of the caf\u00e9 front at late afternoon. A 32-foot frontage of full-height glazing in slim matte-black frames, a centred pair of glass doors standing open, and above the glass a plain deep-forest-green fascia band with nothing written on it. Through the glass, the lit oak shelving and the island bar are clearly visible and the shop glows warm against the cooler street. On the pavement, two small round oak-topped tables with forest-green powder-coated steel chairs on each side of the door, low black steel planters with green foliage along the glass, and a taller planter at each end. Pale grey concrete pavers. A few people walking past, blurred. 35mm lens, camera at eye height, centred, 16:9, natural colour, fine photographic grain.",
+  "usage": {
+    "promptTokenCount": 1364,
+    "candidatesTokenCount": 1507,
+    "totalTokenCount": 3090,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 590
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 774
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1120
+      }
+    ],
+    "thoughtsTokenCount": 219,
+    "serviceTier": "standard"
+  }
+}

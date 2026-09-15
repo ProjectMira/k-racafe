@@ -1,0 +1,37 @@
+{
+  "view": 5,
+  "name": "Right wall \u2014 Dry snacks",
+  "backend": "gemini",
+  "model": "gemini-3-pro-image",
+  "quality": "high",
+  "size": "1536x1024",
+  "refs": [
+    "massing.png",
+    "floor-plan.png",
+    "01-overview-isometric-cutaway.png"
+  ],
+  "prompt": "The first reference image is an exact 3D massing model of the caf\u00e9 with every fixture labelled; the second is the dimensioned floor plan it was built from. Keep every object exactly where the model puts it, at its size: the island is two parallel counters with an open walkway between them, the espresso machine, grinders, juicer and sink on the back counter, the pastry case and till on the front counter; the back wall is shelving with the menu board centred over a low shelf and a door at the far left, with no counter against it; three open chillers fill the left wall under a lightbox sign; open snack shelving fills the right wall. The third reference is the approved overview render of the same caf\u00e9: match its materials, colours and lighting, and render the view described below from inside that exact space. k\u014dra is a small grab-and-go caf\u00e9 in Delhi. The room is a clean rectangle, 32 feet wide and 19 feet deep, with a full-height glass front onto the street and a 12-by-8-foot island bar in the middle. Materials: pale white-oak timber shelving with thin matte-black steel frames, fluted white-oak counter fronts, honed pale-limestone counter tops, warm off-white lime-plaster walls, pale oak-look porcelain plank floor, one deep forest-green accent used only on the fascia, the outdoor chairs and small signs. Signage is black capital letters on white backlit panels. Light is warm white, 3000 K, from LED strips under every shelf and three opal-glass pendants over the island; daylight comes in through the glass front. Everything is tidy and stocked: rows of clear bottles of cold-pressed juice in orange, red, green and gold, fruit cups, kraft snack bags, white coffee cups. No people unless stated, no clutter, no rustic props, no coffee sacks, no exposed brick, no neon, no readable text anywhere except the signs named in the view. A photorealistic interior photograph looking straight at the right wall. A 14-foot run of open pale-oak shelving, seven shelves high, in a thin matte- black steel frame, each shelf lit from below by a warm LED strip. Shelves are stocked in tidy rows: kraft paper bags of nuts and granola, oven-baked chips, oat cookies in clear bags with small white labels, a few tins of tea. Above the shelving, small black capital letters on the plaster wall read DRY SNACKS. At the near end, by the glass front, a single potted plant in a black steel planter. Pale oak porcelain floor, warm off-white plaster wall. Camera at chest height, straight on, 35mm, 3:2, soft natural colour, fine grain.",
+  "usage": {
+    "promptTokenCount": 1351,
+    "candidatesTokenCount": 1413,
+    "totalTokenCount": 3004,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 577
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 774
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1120
+      }
+    ],
+    "thoughtsTokenCount": 240,
+    "serviceTier": "standard"
+  }
+}

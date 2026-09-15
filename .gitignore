@@ -7,3 +7,7 @@ node_modules/
 # the partners' Aadhaar and PAN cards.
 drive-archive/
 Kora-documentation/
+
+# earlier render takes stay local
+space/renders/superseded/
+__pycache__/
