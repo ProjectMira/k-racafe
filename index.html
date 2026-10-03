@@ -12,11 +12,13 @@
 <meta property="og:description" content="Cold pressed juices, wellness shots and specialty coffee. Delhi.">
 <meta property="og:url" content="https://xn--kracafe-5lb.com/">
 <meta property="og:site_name" content="kōra">
-<meta property="og:image" content="https://xn--kracafe-5lb.com/og-image.png">
+<meta property="og:image" content="https://xn--kracafe-5lb.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Concept render of the kōra storefront: a green-and-white striped awning over a glass front, chillers and a coffee island inside">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://xn--kracafe-5lb.com/og-image.png">
+<meta name="twitter:image" content="https://xn--kracafe-5lb.com/og-image.jpg">
 <meta name="theme-color" content="#2f4a35">
 
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -28,6 +30,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
 
 <script type="application/ld+json">
 {
@@ -58,7 +61,11 @@
     </svg>
     <span class="wordmark">k<span class="o">ō</span>ra</span>
   </a>
-  <nav>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Site navigation">
+    <span class="bars" aria-hidden="true"></span>
+  </button>
+  <nav id="site-nav" aria-label="Main">
+    <a href="#space">Space</a>
     <a href="#about">About</a>
     <a href="#ethos">Ethos</a>
     <a href="#menu">Menu</a>
@@ -81,8 +88,19 @@
         <a class="btn ghost" href="#visit">Visit us</a>
       </div>
     </div>
-    <img class="hero-img" src="img/butterfly-lime-soda.svg" width="600" height="800"
-         alt="Butterfly lime soda in a clear kōra cup, the tea shifting from blue to magenta">
+    <figure class="hero-media">
+      <a class="shot" href="img/space/storefront-1536.jpg">
+        <picture>
+          <source type="image/webp" sizes="(max-width: 760px) 100vw, 710px"
+                  srcset="img/space/storefront-800.webp 800w, img/space/storefront-1536.webp 1536w">
+          <img src="img/space/storefront-800.jpg" sizes="(max-width: 760px) 100vw, 710px"
+               srcset="img/space/storefront-800.jpg 800w, img/space/storefront-1536.jpg 1536w"
+               width="1536" height="1024" fetchpriority="high"
+               alt="The kōra storefront: KORA lettered above a green-and-white striped awning, a glass front showing lit chillers on the left, a stone coffee island in the middle and the ō mark on the back wall">
+        </picture>
+      </a>
+      <figcaption class="render-tag">Concept render</figcaption>
+    </figure>
   </section>
 
   <section class="strip" aria-label="What we stand for">
@@ -90,6 +108,70 @@
     <span>Cold pressed daily</span>
     <span>Bring your own cup</span>
     <span>No decision fatigue</span>
+  </section>
+
+  <section class="space" id="space" aria-labelledby="space-title">
+    <h2 class="section-title" id="space-title">The space</h2>
+    <p class="section-note">
+      We're looking for our spot in Delhi now. These concept renders show the
+      café we're building — open to the street, quick to walk through, and
+      stocked from the front door back.
+    </p>
+
+    <figure class="space-lead">
+      <a class="shot" href="img/space/street-1536.jpg">
+        <picture>
+          <source type="image/webp" sizes="(max-width: 760px) 100vw, 970px"
+                  srcset="img/space/street-800.webp 800w, img/space/street-1536.webp 1536w">
+          <img src="img/space/street-800.jpg" sizes="(max-width: 760px) 100vw, 970px"
+               srcset="img/space/street-800.jpg 800w, img/space/street-1536.jpg 1536w"
+               width="1536" height="1024" loading="lazy" decoding="async"
+               alt="The kōra front on a tree-lined street: people at small bistro tables on the pavement under the striped awning, planters along the kerb, the coffee island visible through the open glass door">
+        </picture>
+      </a>
+      <figcaption>
+        <h3>Open to the street</h3>
+        <p>A glass front under a green-and-white awning, a few small tables on the
+        pavement, and the coffee bar in view from outside.</p>
+      </figcaption>
+    </figure>
+
+    <div class="space-pair">
+      <figure>
+        <a class="shot" href="img/space/inside-1600.jpg">
+          <picture>
+            <source type="image/webp" sizes="(max-width: 760px) 100vw, 480px"
+                    srcset="img/space/inside-800.webp 800w, img/space/inside-1600.webp 1600w">
+            <img src="img/space/inside-800.jpg" sizes="(max-width: 760px) 100vw, 480px"
+                 srcset="img/space/inside-800.jpg 800w, img/space/inside-1600.jpg 1600w"
+                 width="1600" height="900" loading="lazy" decoding="async"
+                 alt="Inside kōra from the door: glass-front chillers of juices and packaged food line both walls, a stone island with the espresso machine sits in the middle under three globe pendants">
+          </picture>
+        </a>
+        <figcaption>
+          <h3>A loop, not a queue</h3>
+          <p>Step in, take what you want from the chillers, pay at the island in
+          the middle, and you're back on your way.</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <a class="shot" href="img/space/grab-and-go-1536.jpg">
+          <picture>
+            <source type="image/webp" sizes="(max-width: 760px) 100vw, 480px"
+                    srcset="img/space/grab-and-go-800.webp 800w, img/space/grab-and-go-1536.webp 1536w">
+            <img src="img/space/grab-and-go-800.jpg" sizes="(max-width: 760px) 100vw, 480px"
+                 srcset="img/space/grab-and-go-800.jpg 800w, img/space/grab-and-go-1536.jpg 1536w"
+                 width="1536" height="1024" loading="lazy" decoding="async"
+                 alt="The grab-and-go wall: lit open shelves of cold pressed juices in green, orange, yellow and red, parfait cups, sandwiches and boxed meals, each in kōra packaging, with a customer choosing">
+          </picture>
+        </a>
+        <figcaption>
+          <h3>Grab &amp; go</h3>
+          <p>Cold pressed juices, parfaits, sandwiches and packaged food, faced
+          forward on lit shelves so choosing takes seconds.</p>
+        </figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="story" id="about">
@@ -281,8 +363,8 @@
         </div>
       </dl>
       <p class="visit-note">
-        We're fitting out the space now. Full address, hours and opening-week
-        details will land here first.
+        We're looking for our location now. Full address, hours and
+        opening-week details will land here first.
       </p>
     </div>
   </section>

@@ -4,11 +4,13 @@ Static site for kōra, a clean-ingredient café opening in Delhi,
 1 November 2026. No build step: plain HTML, CSS and a little vanilla JS.
 
 ```
-index.html    single page — hero, story, ethos, signatures, menu, visit
+index.html    single page — hero, space, story, ethos, signatures, menu, visit
 gallery.html  drink studies, linked from the signatures section
-styles.css    brand palette + layout
-main.js       menu category tabs (WAI-ARIA tabs pattern)
+styles.css    brand palette + layout (phone rules sit under max-width:760px)
+main.js       phone nav toggle; menu category tabs (WAI-ARIA tabs pattern)
 img/          drink study SVGs
+img/space/    concept renders of the café, 800px + full size, WebP + JPEG
+og-image.jpg  link preview (WhatsApp, iMessage, socials) — storefront render
 brand/        logo kit — svg, png, print, favicon, social; build.py regenerates it
 fonts/        one subset woff2 (see Wordmark below)
 robots.txt    / sitemap.xml
@@ -93,4 +95,6 @@ GoDaddy from `ns69/ns70.domaincontrol.com` to the pair Cloudflare assigns.
 - Opening hours
 - Phone / email / Instagram — no contact details exist in the brand docs yet
 - Prices — the menu is deliberately price-free for now
-- Real photography; the drink studies in `img/` are illustrations, not photos
+- Real photography; the drink studies in `img/` are illustrations and the
+  space images in `img/space/` are concept renders, labelled as such on the
+  page. Swap in photos of the real site once a location is signed
