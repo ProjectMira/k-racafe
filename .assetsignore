@@ -1,0 +1,6 @@
+# Kept out of the published site (Wrangler reads this from the assets root).
+.git
+.wrangler
+node_modules
+wrangler.jsonc
+.assetsignore

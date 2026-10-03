@@ -1,0 +1,12 @@
+// Cloudflare Workers Builds runs `npx wrangler deploy` on every push to main.
+// Without this file, newer Wrangler versions try to auto-generate a config
+// mid-build and the build fails. There is no build step: the repository root
+// is published as static assets, as-is (see README → Deploy).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "k-racafe",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  }
+}

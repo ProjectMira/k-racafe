@@ -50,8 +50,15 @@ Then open http://localhost:4321. (Or use the `kora-site` config in
 
 ## Deploy
 
-Cloudflare Pages builds from GitHub: <https://github.com/ProjectMira/k-racafe>.
-Push to `main` and the site redeploys automatically.
+Cloudflare Workers Builds (project `k-racafe`) builds from GitHub:
+<https://github.com/ProjectMira/k-racafe>. Push to `main` and it runs
+`npx wrangler deploy`, which reads `wrangler.jsonc` and publishes the repo root
+as static assets (`.assetsignore` keeps config files out). Keep
+`wrangler.jsonc`: without it, newer Wrangler tries to auto-generate a config
+mid-build and the build fails (as it did on 3 Oct 2026).
+
+A push is not a deploy: check the commit's status on GitHub and load the
+live site before calling it done.
 
 ```bash
 git push
